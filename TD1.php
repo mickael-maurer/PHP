@@ -1,2 +1,2 @@
 <?php
-echo 'toto';
+echo 'third';
