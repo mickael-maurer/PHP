@@ -7,5 +7,5 @@
     echo "$var1 + $var2 = ";
     echo $var1 + $var2;
     echo '<br/>';
-    echo 'oui';
+    echo date('l F d, Y');
 ?>
