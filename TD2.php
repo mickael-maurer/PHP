@@ -1,10 +1,10 @@
 <?php
     include'utils.inc.php';
     //Correspondàl’adresseIPdeceluiquivisualiselapage.
-    echogetenv('REMOTE_ADDR');
+    echo getenv('REMOTE_ADDR');
     //Correspondàl’adresseIPduserveur.
-    echogetenv('HTTP_HOST');//Correspondau
+    echo getenv('HTTP_HOST');//Correspondau
     //logicielserveurWebutilisé.
-    echogetenv('SERVER_SOFTWARE');
+    echo getenv('SERVER_SOFTWARE');
     phpinfo();
 ?>
