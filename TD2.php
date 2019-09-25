@@ -4,18 +4,18 @@
 ?>
 
 <form>
-    <input type="text"/>
-    <input type="radio"/>
-    <input type="text"/>
-    <input type="password"/>
-    <input type="password"/>
-    <input type="text"/>
+    <input type="text"/><br/>
+    <input type="radio"/><br/>
+    <input type="text"/><br/>
+    <input type="password"/><br/>
+    <input type="password"/><br/>
+    <input type="text"/><br/>
     <select>
-        <option value="France" >France</option>
-        <option value="Pakistan" >Pakistan</option>
+        <option value="France" >France</option><br/>
+        <option value="Pakistan" >Pakistan</option><br/>
     </select>
-    <input type="checkbox"/>
-    <input type="submit"/>
+    <input type="checkbox"/><br/>
+    <input type="submit"/><br/>
 </form>
 
 <?php
