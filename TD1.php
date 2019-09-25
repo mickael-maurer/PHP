@@ -7,7 +7,7 @@
     $jour_3 = date('d/m/Y', date('2001-03-12'));
 
     echo '<strong> Voici mon premier programme PHP </strong><br/>' . "\n";
-    echo 'C\'est pas mal non ? <br/>';
+    echo 'C\'incroyable <br/>';
 
     echo "$var1 + $var2 = ";
     echo $var1 + $var2;
