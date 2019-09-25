@@ -1,4 +1,5 @@
 <?php
+    include'utils.inc.php';
     $var1 = 6;
     $var2 = 1.3;
     $var3 = 'Variable 3';
