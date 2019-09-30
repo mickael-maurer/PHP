@@ -15,7 +15,7 @@
         <option value="Pakistan" >Pakistan</option><br/>
     </select><br/>
     <input type="checkbox"/><br/>
-    <input type="submit" name="action" value="mailer" method="post"/><br/>
+    <input type="submit" name="action" value="mailer"/><br/>
 </form>
 
 <?php
