@@ -4,17 +4,20 @@
 ?>
 
 <form action="data-processing.php" method="post">
-    <input type="text"/>oui<br/>
-    <input type="radio"/><br/>
-    <input type="text"/><br/>
-    <input type="password"/><br/>
-    <input type="password"/><br/>
-    <input type="text"/><br/>
-    <select>
+    <input type="text" name="identifiant"/>Identifiant<br/>
+    <input type="radio" name="sexe" value="femme"/>Femme<br/>
+    <input type="radio" name="sexe" value="homme"/>Homme<br/>
+    <input type="text" name="email"/>E-mail<br/>
+    <input type="password" name="mdp"/>Mot de passe<br/>
+    <input type="password"name="mdp"/>Vérification de mot de passe<br/>
+    <input type="text" name="telephone"/>Téléphone<br/>
+    <select name="nom_pays">
         <option value="France" >France</option><br/>
-        <option value="Pakistan" >Pakistan</option><br/>
+        <option value="Belgique" >Pakistan</option><br/>
+        <option value="Italie" >Pakistan</option><br/>
+        <option value="Espagne" >Pakistan</option><br/>
     </select><br/>
-    <input type="checkbox"/><br/>
+    <input type="checkbox" name="condition"/>Condition d'utilisation<br/>
     <input type="submit" name="action" value="mailer"/><br/>
 </form>
 
