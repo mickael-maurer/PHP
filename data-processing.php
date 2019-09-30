@@ -1,6 +1,4 @@
 <?php
-$action = 0;
-
 $identifiant = $_POST['identifiant'];
 $sexe = $_POST['sexe'];
 $email = $_POST['email'];
