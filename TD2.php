@@ -4,7 +4,7 @@
 ?>
 
 <form action="data-processing.php" method="post">
-    <input type="text"/><br/>
+    <input type="text"/>oui<br/>
     <input type="radio"/><br/>
     <input type="text"/><br/>
     <input type="password"/><br/>
@@ -15,7 +15,7 @@
         <option value="Pakistan" >Pakistan</option><br/>
     </select><br/>
     <input type="checkbox"/><br/>
-    <input type="submit" name="action" method="post"/><br/>
+    <input type="submit" name="action" value="mailer" method="post"/><br/>
 </form>
 
 <?php
