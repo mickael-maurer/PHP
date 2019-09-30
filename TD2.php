@@ -13,12 +13,12 @@
     <input type="text" name="telephone"/>Téléphone<br/>
     <select name="nom_pays">
         <option value="France" >France</option><br/>
-        <option value="Belgique" >Pakistan</option><br/>
-        <option value="Italie" >Pakistan</option><br/>
-        <option value="Espagne" >Pakistan</option><br/>
+        <option value="Belgique" >Belgique</option><br/>
+        <option value="Italie" >Italie</option><br/>
+        <option value="Espagne" >Espagne</option><br/>
     </select><br/>
     <input type="checkbox" name="condition"/>Condition d'utilisation<br/>
-    <input type="submit" name="action" value="mailer"/><br/>
+    <input type="submit" name="action" value="mailer"/>Envoyer<br/>
 </form>
 
 <?php
