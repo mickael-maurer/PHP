@@ -1,6 +1,5 @@
 <?php
     include 'utils.inc.php';
-
 ?>
 
 <form action="data-processing.php" method="post">

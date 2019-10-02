@@ -8,7 +8,7 @@ $pays = $_POST['nom_pays'];
 $action = $_POST['action'];
 $today = date('Y-m-d');
 
-$dbLink = mysqli_connect('mysql-mickaelmaurer.alwaysdata.net','174459','J8Epd537v9za@@')
+$dbLink = mysqli_connect('mysql-mickaelmaurer.alwaysdata.net','174459','motdepassesql')
 or die('Erreur de connexion au serveur:'.mysqli_connect_error());
 
 mysqli_select_db($dbLink,'mickaelmaurer_sql')
@@ -35,7 +35,6 @@ if($action == 'mailer')
     $query.='"'.$telephone.'",';
     $query.='"'.$pays.'",';
     $query.='"'.$today.'")';
-
 
 }
 else
