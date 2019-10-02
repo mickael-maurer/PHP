@@ -24,7 +24,7 @@ if($action == 'mailer')
     $message .= 'Sexe : '. PHP_EOL . $sexe;
     $message .= 'Téléphone : '. PHP_EOL . $telephone;
     $message .= 'Pays : '. PHP_EOL . $pays;
-    var_dump($email);
+    var_dump($query);
     mail($email, 'test', $message);
     echo '<br/><strong>envoyé</strong><br/>';
 
