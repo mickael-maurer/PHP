@@ -8,14 +8,32 @@ $pays = $_POST['nom_pays'];
 $action = $_POST['action'];
 $today = date('Y-m-d');
 
-/*$dbLink = mysqli_connect('mysql-mickaelmaurer.alwaysdata.net','174459','motdepassesql')
+$dbLink = mysqli_connect('mysql-mickaelmaurer.alwaysdata.net','174459','motdepassesql')
 or die('Erreur de connexion au serveur:'.mysqli_connect_error());
 
 mysqli_select_db($dbLink,'mickaelmaurer_sql')
 or die('Erreur dans la sélection de la base:'.mysqli_error($dbLink));
 
-$query = 'SELECT id, sexe, email, password, telephone, pays, date FROM user';
-*/
+
+$query  = 'INSERT INTO user(sexe, email, password, telephone, pays, date)VALUES(';
+$query .= '"'.$sexe . '",';
+$query .= '"'.$email . '",';
+$query .= '"'.$password . '",';
+$query .= '"'.$telephone . '",';
+$query .= '"'.$pays . '",';
+$query .= '"'.$today . '")';
+
+if(!($dbResult = mysqli_query($dbLink, $query)))
+{
+    echo 'Erreurderequête<br/>';
+    // Affiche le type d'erreur.
+    echo 'Erreur : ' . mysqli_error($dbLink) . '<br/>';
+    // Affiche la requête envoyée.
+    echo 'Requête : ' . $query . '<br/>';
+    exit();
+}
+
+
 if($action == 'mailer')
     {
         $message = 'Voici vos identifiants d\'inscription :' .PHP_EOL .$identifiant;
@@ -24,17 +42,9 @@ if($action == 'mailer')
         $message .= 'Sexe : '. PHP_EOL . $sexe;
         $message .= 'Téléphone : '. PHP_EOL . $telephone;
         $message .= 'Pays : '. PHP_EOL . $pays;
-        mail($email, 'test', $message);
+        //mail($email, 'test', $message);
         echo '<br/><strong>envoyé</strong><br/>';
 
-        /*$query  = 'INSERT INTO user(id, sexe, email, password, telephone, pays, date)VALUES(';
-        $query .= '"'.$identifiant . '",';
-        $query .= '"'.$sexe . '",';
-        $query .= '"'.$email . '",';
-        $query .= '"'.$password . '",';
-        $query .= '"'.$telephone . '",';
-        $query .= '"'.$pays . '",';
-        $query .= '"'.$today . '")';*/
     }
 else
     {
