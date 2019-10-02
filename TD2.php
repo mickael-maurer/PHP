@@ -8,7 +8,6 @@
     <input type="radio" name="sexe" value="homme"/>Homme<br/>
     <input type="text" name="email"/>E-mail<br/>
     <input type="password" name="mdp"/>Mot de passe<br/>
-    <input type="password"name="mdp"/>Vérification de mot de passe<br/>
     <input type="text" name="telephone"/>Téléphone<br/>
     <select name="nom_pays">
         <option value="France" >France</option><br/>
