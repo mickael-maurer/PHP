@@ -29,7 +29,7 @@ if($action == 'mailer')
     echo '<br/><strong>envoyé</strong><br/>';
 
     $query = 'INSERT INTO user (date, email) VALUES (\'' . $today . '\', \'' . $email . '\')';
-
+    var_dump($query);
     }
 else
     {
