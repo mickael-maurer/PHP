@@ -24,13 +24,20 @@ if($action == 'mailer')
     $message .= 'Sexe : '. PHP_EOL . $sexe;
     $message .= 'Téléphone : '. PHP_EOL . $telephone;
     $message .= 'Pays : '. PHP_EOL . $pays;
-    var_dump($query);
     mail($email, 'test', $message);
     echo '<br/><strong>envoyé</strong><br/>';
 
-    $query = 'INSERT INTO user (date, email) VALUES (\'' . $today . '\', \'' . $email . '\')';
-    var_dump($query);
-    }
+    $query='INSERT INTO user(id, sexe, email, password, telephone, pays, date)VALUES(';
+    $query.='"'.$identifiant.'",';
+    $query.='"'.$sexe.'",';
+    $query.='"'.$email.'",';
+    $query.='"'.$password.'",';
+    $query.='"'.$telephone.'",';
+    $query.='"'.$pays.'",';
+    $query.='"'.$today.'")';
+
+
+}
 else
     {
     echo '<br/><strong>Bouton non géré !</strong><br/>';
