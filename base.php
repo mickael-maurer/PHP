@@ -16,4 +16,11 @@
         echo 'Requête : ' . $query . '<br/>';
         exit();
     }
+
+    while ($dbRow = mysqli_fetch_assoc($dbResult)){
+        echo $dbRow ['id']      . '<br/>';
+        echo $dbRow ['email']   . '<br/>';
+        echo $dbRow ['date']    . '<br/>';
+        echo '<br/><br/>';
+    }
 ?>
