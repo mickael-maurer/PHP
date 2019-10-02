@@ -14,7 +14,7 @@ or die('Erreur de connexion au serveur:'.mysqli_connect_error());
 mysqli_select_db($dbLink,'mickaelmaurer_sql')
 or die('Erreur dans la sélection de la base:'.mysqli_error($dbLink));
 
-$query = 'SELECT id, email, date FROM user';
+$query = 'SELECT id, sexe, email, password, telephone, pays, date FROM user';
 
 if($action == 'mailer')
 {
