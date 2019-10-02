@@ -14,8 +14,13 @@ if($action == 'mailer') {
         $message .= 'Sexe : '. PHP_EOL . $sexe;
         $message .= 'Téléphone : '. PHP_EOL . $telephone;
         $message .= 'Pays : '. PHP_EOL . $pays;
-        echo '<br/><strong>Mail envoyé</strong><br/>';
-        mail($email, 'test', $message);
+
+        if(!mail($email, 'test', $message)) {
+            echo '<br/><strong>erreur</strong><br/>';
+        } else {
+            echo '<br/><strong>Mail envoyé</strong><br/>';
+        }
+
     }
     else {
        echo '<br/><strong>Bouton non géré !</strong><br/>';
